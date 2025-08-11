@@ -1156,7 +1156,7 @@ class SQLParser {
 			$out = '';
 			for ($i=1; $i<strlen($token)-1; $i++){
 				if ($token[$i] == '\\'){
-					if ($map[$token[$i+1]]){
+					if ($map[$token[$i+1]] ?? false){
 						$out .= $map[$token[$i+1]];
 					}else{
 						$out .= $token[$i+1];
