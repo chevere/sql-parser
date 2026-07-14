@@ -272,7 +272,7 @@
 		}
 
 		function testTexts(){
-
+			$this->markTestIncomplete('not implemented yet');
 			# TODO
 
 			# TINYTEXT [BINARY] [CHARACTER SET charset_name] [COLLATE collation_name]
@@ -371,7 +371,7 @@
 
 
 		function testSpatials(){
-
+			$this->markTestIncomplete('not implemented yet');
 			# TODO
 
 			# GEOMETRY
@@ -385,7 +385,7 @@
 		}
 
 		function testJson(){
-
+			$this->markTestIncomplete('not implemented yet');
 			# TODO
 
 			# JSON
@@ -431,6 +431,7 @@
 		}
 
 		function testVirtualOptions(){
+			$this->markTestIncomplete('not implemented yet');
 
 			# TODO
 
