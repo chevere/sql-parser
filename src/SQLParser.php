@@ -127,6 +127,11 @@ class SQLParser {
 						$c += 2;
 						continue;
 					}
+					# quote doubling
+					if ($sql[$c] == $q && isset($sql[$c+1]) && $sql[$c+1] == $q){
+						$c += 2;
+						continue;
+					}
 					if ($sql[$c] == $q){
 						$slen = $c + 1 - $pos;
 						$source_map[] = array($pos, $slen);
@@ -1152,8 +1157,11 @@ class SQLParser {
 				'n'	=> "\n",
 				'r'	=> "\r",
 				't'	=> "\t",
+				"'"	=> "'",
+				'"'	=> '"',
 			);
 			$out = '';
+			$q = $token[0];
 			for ($i=1; $i<strlen($token)-1; $i++){
 				if ($token[$i] == '\\'){
 					if ($map[$token[$i+1]] ?? false){
@@ -1161,6 +1169,10 @@ class SQLParser {
 					}else{
 						$out .= $token[$i+1];
 					}
+					$i++;
+				}elseif ($token[$i] == $q && $token[$i+1] == $q){
+					# quote doubling
+					$out .= $q;
 					$i++;
 				}else{
 					$out .= $token[$i];
