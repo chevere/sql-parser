@@ -271,7 +271,7 @@
 			), $fields);
 		}
 
-		// function testTexts(){
+		function testTexts(){
 
 			# TODO
 
@@ -279,9 +279,9 @@
 			# TEXT [BINARY] [CHARACTER SET charset_name] [COLLATE collation_name]
 			# MEDIUMTEXT [BINARY] [CHARACTER SET charset_name] [COLLATE collation_name]
 			# LONGTEXT [BINARY] [CHARACTER SET charset_name] [COLLATE collation_name]
-		// }
+		}
 
-		// function testSets(){
+		function testSets(){
 
 			# TODO
 
@@ -370,7 +370,7 @@
 		}
 
 
-		// function testSpatials(){
+		function testSpatials(){
 
 			# TODO
 
@@ -382,14 +382,14 @@
 			# MULTILINESTRING
 			# MULTIPOLYGON
 			# GEOMETRYCOLLECTION
-		// }
+		}
 
-		// function testJson(){
+		function testJson(){
 
 			# TODO
 
 			# JSON
-		// }
+		}
 
 		function testFieldOptions(){
 
@@ -430,7 +430,7 @@
 			$this->assertEquals('user count', $fields[0]['comment']);
 		}
 
-		// function testVirtualOptions(){
+		function testVirtualOptions(){
 
 			# TODO
 
@@ -439,7 +439,7 @@
 			# [UNIQUE [KEY]] | [[PRIMARY] KEY]
 			# [COMMENT comment]
 			# [NOT NULL | NULL]
-		// }
+		}
 
 
 		function get_fields($indexes){
