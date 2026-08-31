@@ -599,6 +599,7 @@ class SQLParser {
 			case 'MEDIUMBLOB':
 			case 'LONGBLOB':
 			case 'JSON':
+			case 'UUID':
 			case 'GEOMETRY':
 			case 'POINT':
 			case 'LINESTRING':
