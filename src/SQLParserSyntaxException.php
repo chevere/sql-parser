@@ -1,5 +1,25 @@
 <?php
 
+/*
+ * MIT License
+ *
+ * Copyright (c) 2013-2017 Cal Henderson
+ *
+ * ---
+ *
+ * This file is part of Chevere.
+ *
+ * (c) Rodolfo Berrios <rodolfo@chevere.org>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ *
+ */
+
+declare(strict_types=1);
+
 namespace iamcal;
 
-class SQLParserSyntaxException extends \Exception { }
+class SQLParserSyntaxException extends \Exception
+{
+}
