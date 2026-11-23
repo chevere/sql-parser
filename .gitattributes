@@ -1,15 +1,16 @@
-* text=auto
+/.ecs export-ignore
+/.gitattributes export-ignore
+/.github export-ignore
+/.gitignore export-ignore
+/.vscode export-ignore
+/demo export-ignore
+/infection.json.dist export-ignore
+/phpunit-coverage.xml export-ignore
+/phpunit.xml export-ignore
+/rector.php export-ignore
+/sonar-project.properties export-ignore
+/tests export-ignore
+/phpstan.neon export-ignore
+/chevere.svg export-ignore
 
-# Path-based git attributes
-# https://git-scm.com/docs/gitattributes
-
-# Ignore all tests and documentation with "export-ignore".
-/.gitattributes     export-ignore
-/.github            export-ignore
-/.gitignore         export-ignore
-/data               export-ignore
-/Makefile           export-ignore
-/phpunit.xml.dist   export-ignore
-/tests              export-ignore
-/run.php            export-ignore
-/x.php              export-ignore
+*.php diff=php

@@ -1,10 +1,8 @@
 .DS_Store
-.phpunit.cache
 /.idea
 /.phpunit.cache
+/.phpunit.result.cache
 /.scannerwork
-/build
-/composer.lock
 /vendor
-composer.lock
-composer.phar
+/composer.lock
+/build
