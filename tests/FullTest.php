@@ -1,14 +1,15 @@
 <?php
 
 use PHPUnit\Framework\TestCase;
+use PHPUnit\Framework\Attributes\DataProvider;
 
 final class FullTest extends TestCase
 {
     /**
      * @param $sql
      * @param $expected
-     * @dataProvider parseProvider
      */
+    #[DataProvider('parseProvider')]
     public function testBasicCases($sql, $expected)
     {
         $obj = new iamcal\SQLParser();
@@ -17,7 +18,7 @@ final class FullTest extends TestCase
         $this->assertEquals($expected, $tables);
     }
 
-    public function parseProvider()
+    public static function parseProvider()
     {
         return array(
             array(
